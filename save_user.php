@@ -9,11 +9,9 @@ switch($_REQUEST["action"]) {
         $city = $_POST["city"];
         $state = $_POST["state"];
         
-        echo "ola sou eu dnv";
 
         $sql = "INSERT INTO crud_php ('name, street, number_street, district, city, state') VALUE ('{$name}, {$street}, {$number_street}, {$district}, {$city}, {$state}')";
         break;
-
         $res = $conn->query($sql);
 
         if($res==true){
